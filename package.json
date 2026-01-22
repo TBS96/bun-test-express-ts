@@ -1,10 +1,14 @@
 {
   "name": "bun-test-express-ts",
-  "module": "index.ts",
+  "module": "./src/server.ts",
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "bun --watch --smol ./src/server.ts"
+    "dev": "bun --watch --smol --hot ./src/server.ts",
+    "start": "bun ./src/server.ts",
+    "bundle": "bun build ./src/server.ts --outdir ./dist --target bun",
+    "type-check": "tsc --noEmit",
+    "type-watch": "tsc --noEmit -w"
   },
   "devDependencies": {
     "@types/bun": "latest",
