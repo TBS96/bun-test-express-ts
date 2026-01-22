@@ -8,5 +8,5 @@ export interface Config {
     refreshTokenExpiry: string,
     cloudinaryCloudName: string,
     cloudinaryApiKey: string,
-    cloudinaryApiSecret: string 
+    cloudinaryApiSecret: string,
 }
