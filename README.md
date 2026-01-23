@@ -1,4 +1,4 @@
-# bun-test-ts
+# bun-test-express-ts
 
 To install dependencies:
 
